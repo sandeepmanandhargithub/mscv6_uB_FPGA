@@ -1,0 +1,3 @@
+vhdl work "FlipFlop.vhd"
+vhdl work "kernel.vhd"
+vhdl work "kernel_tb.vhd"

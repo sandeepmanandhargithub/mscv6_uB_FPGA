@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/student/workspace_Xilinx/lena1/kernel_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="kernel_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/kernel_tb/in1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/in2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/in3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in3[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/in4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in4[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/in5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in5[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/in6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in6[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/in7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in7[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/in8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in8[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/in9" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in9[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in9[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m4[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m4[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m5[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m5[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m6[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m6[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m7" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m7[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m7[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m8" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m8[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m8[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/m9" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">m9[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m9[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/divider_selector" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">divider_selector</obj_property>
+      <obj_property name="ObjectShortName">divider_selector</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/rd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/uut/absres" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">absres[16:0]</obj_property>
+      <obj_property name="ObjectShortName">absres[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/uut/absrestemp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">absrestemp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">absrestemp[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">op[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/uut/add12" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">add12[13:0]</obj_property>
+      <obj_property name="ObjectShortName">add12[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/uut/add1234" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">add1234[14:0]</obj_property>
+      <obj_property name="ObjectShortName">add1234[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/uut/add12345678" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">add12345678[15:0]</obj_property>
+      <obj_property name="ObjectShortName">add12345678[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/uut/add123456789" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">add123456789[16:0]</obj_property>
+      <obj_property name="ObjectShortName">add123456789[16:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/uut/stateg" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">stateg</obj_property>
+      <obj_property name="ObjectShortName">stateg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/kernel_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

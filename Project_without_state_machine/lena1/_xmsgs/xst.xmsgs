@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/student/workspace_Xilinx/lena1/kernel.vhd" Line 185: <arg fmt="%s" index="1">add123456789</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">add123456789_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">kernel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">add123456789_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">kernel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">add123456789_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">kernel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">add123456789_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">kernel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">add123456789_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">kernel</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m8[3]_GND_4_o_MuLt_7_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m8[3]_GND_4_o_MuLt_7_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">add5678_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;add5678_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m4[3]_GND_4_o_MuLt_3_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m4[3]_GND_4_o_MuLt_3_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">add56_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;add56_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m6[3]_GND_4_o_MuLt_5_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m6[3]_GND_4_o_MuLt_5_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m2[3]_GND_4_o_MuLt_1_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m2[3]_GND_4_o_MuLt_1_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m9[3]_GND_4_o_MuLt_8_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m9[3]_GND_4_o_MuLt_8_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extraFF9c/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extraFF9c/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m5[3]_GND_4_o_MuLt_4_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m5[3]_GND_4_o_MuLt_4_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">add34_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;add34_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extraFF9b/temp_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extraFF9b/temp_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">add12345678_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;add12345678_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extraFF9a/temp_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extraFF9a/temp_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra9/temp_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra9/temp_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra8/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra8/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra7/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra7/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">add12_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;add12_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m7[3]_GND_4_o_MuLt_6_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m7[3]_GND_4_o_MuLt_6_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra6/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra6/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m3[3]_GND_4_o_MuLt_2_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m3[3]_GND_4_o_MuLt_2_OUT_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra5/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra5/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra4/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra4/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra3/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra3/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra2/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra2/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">extra1/temp_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;extra1/temp_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">add1234_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;add1234_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">add78_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;add78_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">Mmult_m1[3]_GND_4_o_MuLt_0_OUT_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">kernel</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Mmult_m1[3]_GND_4_o_MuLt_0_OUT_0&gt; </arg>
+</msg>
+
+</messages>
+

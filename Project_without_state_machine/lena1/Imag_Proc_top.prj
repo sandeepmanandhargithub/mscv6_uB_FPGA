@@ -1,0 +1,6 @@
+vhdl work "FlipFlop.vhd"
+vhdl work "kernel.vhd"
+vhdl work "fifo.vhd"
+vhdl work "ImageFilter.vhd"
+vhdl work "DataFlow_Display.vhd"
+vhdl work "Imag_proc_top.vhd"

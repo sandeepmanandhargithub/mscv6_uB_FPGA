@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/student/workspace_Xilinx/lena1/Imag_Proc_top.ncd
+OUTFILE=/home/student/workspace_Xilinx/lena1/Imag_Proc_top.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/student/workspace_Xilinx/lena1
+LICENSE=WebPack
+USER_INFO=__0_0_0

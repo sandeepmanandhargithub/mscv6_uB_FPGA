@@ -1,0 +1,5 @@
+vhdl isim_temp "FlipFlop.vhd"
+vhdl isim_temp "kernel.vhd"
+vhdl isim_temp "ImageFilter.vhd"
+vhdl isim_temp "DataFlow_Display.vhd"
+vhdl isim_temp "Imag_proc_top.vhd"

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Imag_Proc_top">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2015-12-10T10:55:45</timestamp>
+    <pin polarity="Input" x="0" y="-800" name="clk_i" />
+    <pin polarity="Input" x="0" y="-736" name="rst_i" />
+    <pin polarity="Input" x="0" y="-672" name="ISEcho" />
+    <pin polarity="Input" x="0" y="-608" name="ISRealFreq" />
+    <pin polarity="Input" x="0" y="-544" name="ISPureFreq" />
+    <pin polarity="Input" x="0" y="-480" name="ISFIFO" />
+    <pin polarity="Input" x="0" y="-416" name="ISFast" />
+    <pin polarity="Input" x="0" y="-352" name="ISSlow" />
+    <pin polarity="Input" x="0" y="-288" name="ISVolUp" />
+    <pin polarity="Input" x="0" y="-224" name="ISVolDown" />
+    <pin polarity="Input" x="0" y="-160" name="ISSiren" />
+    <pin polarity="Input" x="0" y="-96" name="ISMusic" />
+    <pin polarity="Input" x="0" y="-32" name="FILTER_SEL(2:0)" />
+    <pin polarity="Output" x="512" y="-800" name="vga_hs_o" />
+    <pin polarity="Output" x="512" y="-656" name="vga_vs_o" />
+    <pin polarity="Output" x="512" y="-512" name="LED(15:0)" />
+    <pin polarity="Output" x="512" y="-368" name="vga_red_o(3:0)" />
+    <pin polarity="Output" x="512" y="-224" name="vga_blue_o(3:0)" />
+    <pin polarity="Output" x="512" y="-80" name="vga_green_o(3:0)" />
+    <graph>
+        <rect width="384" x="64" y="-832" height="832" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="256" y="-840" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-800" type="pin clk_i" />
+        <line x2="0" y1="-800" y2="-800" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-736" type="pin rst_i" />
+        <line x2="0" y1="-736" y2="-736" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-672" type="pin ISEcho" />
+        <line x2="0" y1="-672" y2="-672" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin ISRealFreq" />
+        <line x2="0" y1="-608" y2="-608" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin ISPureFreq" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin ISFIFO" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin ISFast" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin ISSlow" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin ISVolUp" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin ISVolDown" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin ISSiren" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin ISMusic" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin FILTER_SEL(2:0)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-800" type="pin vga_hs_o" />
+        <line x2="512" y1="-800" y2="-800" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-656" type="pin vga_vs_o" />
+        <line x2="512" y1="-656" y2="-656" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-512" type="pin LED(15:0)" />
+        <rect width="64" x="448" y="-524" height="24" />
+        <line x2="512" y1="-512" y2="-512" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-368" type="pin vga_red_o(3:0)" />
+        <rect width="64" x="448" y="-380" height="24" />
+        <line x2="512" y1="-368" y2="-368" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-224" type="pin vga_blue_o(3:0)" />
+        <rect width="64" x="448" y="-236" height="24" />
+        <line x2="512" y1="-224" y2="-224" x1="448" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="440" y="-80" type="pin vga_green_o(3:0)" />
+        <rect width="64" x="448" y="-92" height="24" />
+        <line x2="512" y1="-80" y2="-80" x1="448" />
+    </graph>
+</symbol>

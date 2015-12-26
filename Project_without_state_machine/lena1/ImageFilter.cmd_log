@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/student/workspace_Xilinx/lena1/ImageFilter.xst" -ofn "/home/student/workspace_Xilinx/lena1/ImageFilter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 ImageFilter.ngc ImageFilter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ImageFilter.ucf -p xc7a100t-csg324-1 ImageFilter.ngc ImageFilter.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ImageFilter_map.ncd ImageFilter.ngd ImageFilter.pcf 
+par -w -intstyle ise -ol high -mt off ImageFilter_map.ncd ImageFilter.ncd ImageFilter.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml ImageFilter.twx ImageFilter.ncd -o ImageFilter.twr ImageFilter.pcf -ucf ImageFilter.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ImageFilter.ucf -p xc7a100t-csg324-1 ImageFilter.ngc ImageFilter.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ImageFilter_map.ncd ImageFilter.ngd ImageFilter.pcf 
+par -w -intstyle ise -ol high -mt off ImageFilter_map.ncd ImageFilter.ncd ImageFilter.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml ImageFilter.twx ImageFilter.ncd -o ImageFilter.twr ImageFilter.pcf -ucf ImageFilter.ucf 

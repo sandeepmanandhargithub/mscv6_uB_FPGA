@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/student/workspace_Xilinx/lena1/kernel_tb_isim_beh.exe" -prj "/home/student/workspace_Xilinx/lena1/kernel_tb_beh.prj" "work.kernel_tb" 

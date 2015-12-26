@@ -1,0 +1,4 @@
+vhdl work "FlipFlop.vhd"
+vhdl work "kernel.vhd"
+vhdl work "fifo.vhd"
+vhdl work "ImageFilter.vhd"

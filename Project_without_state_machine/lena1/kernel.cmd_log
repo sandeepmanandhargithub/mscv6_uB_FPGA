@@ -1,0 +1,38 @@
+xst -intstyle ise -ifn "/home/student/workspace_Xilinx/lena1/kernel.xst" -ofn "/home/student/workspace_Xilinx/lena1/kernel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+par -w -intstyle ise -ol high -mt off kernel_map.ncd kernel.ncd kernel.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml kernel.twx kernel.ncd -o kernel.twr kernel.pcf -ucf kernel.ucf 
+xst -intstyle ise -ifn "/home/student/workspace_Xilinx/lena1/kernel.xst" -ofn "/home/student/workspace_Xilinx/lena1/kernel.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+par -w -intstyle ise -ol high -mt off kernel_map.ncd kernel.ncd kernel.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml kernel.twx kernel.ncd -o kernel.twr kernel.pcf -ucf kernel.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+par -w -intstyle ise -ol high -mt off kernel_map.ncd kernel.ncd kernel.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+par -w -intstyle ise -ol high -mt off kernel_map.ncd kernel.ncd kernel.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml kernel.twx kernel.ncd -o kernel.twr kernel.pcf -ucf kernel.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+par -w -intstyle ise -ol high -mt off kernel_map.ncd kernel.ncd kernel.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml kernel.twx kernel.ncd -o kernel.twr kernel.pcf -ucf kernel.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+par -w -intstyle ise -ol high -mt off kernel_map.ncd kernel.ncd kernel.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml kernel.twx kernel.ncd -o kernel.twr kernel.pcf -ucf kernel.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+par -w -intstyle ise -ol high -mt off kernel_map.ncd kernel.ncd kernel.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml kernel.twx kernel.ncd -o kernel.twr kernel.pcf -ucf kernel.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kernel.ucf -p xc7a100t-csg324-1 kernel.ngc kernel.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o kernel_map.ncd kernel.ngd kernel.pcf 
+par -w -intstyle ise -ol high -mt off kernel_map.ncd kernel.ncd kernel.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml kernel.twx kernel.ncd -o kernel.twr kernel.pcf -ucf kernel.ucf 

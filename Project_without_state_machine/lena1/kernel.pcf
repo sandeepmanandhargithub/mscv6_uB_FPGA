@@ -1,0 +1,191 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 03 17:12:55 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+TIMEGRP clk = BEL "add56_0" BEL "add56_1" BEL "add56_2" BEL "add56_3" BEL
+        "add56_4" BEL "add56_5" BEL "add56_6" BEL "add56_7" BEL "add56_8" BEL
+        "add56_9" BEL "add56_10" BEL "add56_11" BEL "add56_12" BEL "add12_0"
+        BEL "add12_1" BEL "add12_2" BEL "add12_3" BEL "add12_4" BEL "add12_5"
+        BEL "add12_6" BEL "add12_7" BEL "add12_8" BEL "add12_9" BEL "add12_10"
+        BEL "add12_11" BEL "add12_12" BEL "add34_0" BEL "add34_1" BEL
+        "add34_2" BEL "add34_3" BEL "add34_4" BEL "add34_5" BEL "add34_6" BEL
+        "add34_7" BEL "add34_8" BEL "add34_9" BEL "add34_10" BEL "add34_11"
+        BEL "add34_12" BEL "add78_0" BEL "add78_1" BEL "add78_2" BEL "add78_3"
+        BEL "add78_4" BEL "add78_5" BEL "add78_6" BEL "add78_7" BEL "add78_8"
+        BEL "add78_9" BEL "add78_10" BEL "add78_11" BEL "add78_12" BEL
+        "add5678_0" BEL "add5678_1" BEL "add5678_2" BEL "add5678_3" BEL
+        "add5678_4" BEL "add5678_5" BEL "add5678_6" BEL "add5678_7" BEL
+        "add5678_8" BEL "add5678_9" BEL "add5678_10" BEL "add5678_11" BEL
+        "add5678_12" BEL "add5678_13" BEL "add1234_0" BEL "add1234_1" BEL
+        "add1234_2" BEL "add1234_3" BEL "add1234_4" BEL "add1234_5" BEL
+        "add1234_6" BEL "add1234_7" BEL "add1234_8" BEL "add1234_9" BEL
+        "add1234_10" BEL "add1234_11" BEL "add1234_12" BEL "add1234_13" BEL
+        "add12345678_0" BEL "add12345678_1" BEL "add12345678_2" BEL
+        "add12345678_3" BEL "add12345678_4" BEL "add12345678_5" BEL
+        "add12345678_6" BEL "add12345678_7" BEL "add12345678_8" BEL
+        "add12345678_9" BEL "add12345678_10" BEL "add12345678_11" BEL
+        "add12345678_12" BEL "add12345678_13" BEL "add12345678_14" BEL
+        "add123456789_0" BEL "add123456789_1" BEL "add123456789_2" BEL
+        "add123456789_3" BEL "add123456789_4" BEL "add123456789_5" BEL
+        "add123456789_6" BEL "add123456789_7" BEL "add123456789_8" BEL
+        "add123456789_9" BEL "add123456789_10" BEL "add123456789_16" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_12" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_11" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_10" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_9" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_8" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_7" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_6" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_5" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_4" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_3" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_2" BEL
+        "Mmult_m2[3]_GND_4_o_MuLt_1_OUT_1" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_12" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_11" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_10" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_9" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_8" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_7" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_6" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_5" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_4" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_3" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_2" BEL
+        "Mmult_m4[3]_GND_4_o_MuLt_3_OUT_1" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_12" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_11" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_10" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_9" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_8" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_7" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_6" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_5" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_4" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_3" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_2" BEL
+        "Mmult_m1[3]_GND_4_o_MuLt_0_OUT_1" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_12" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_11" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_10" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_9" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_8" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_7" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_6" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_5" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_4" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_3" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_2" BEL
+        "Mmult_m3[3]_GND_4_o_MuLt_2_OUT_1" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_12" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_11" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_10" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_9" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_8" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_7" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_6" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_5" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_4" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_3" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_2" BEL
+        "Mmult_m6[3]_GND_4_o_MuLt_5_OUT_1" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_12" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_11" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_10" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_9" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_8" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_7" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_6" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_5" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_4" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_3" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_2" BEL
+        "Mmult_m7[3]_GND_4_o_MuLt_6_OUT_1" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_12" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_11" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_10" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_9" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_8" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_7" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_6" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_5" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_4" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_3" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_2" BEL
+        "Mmult_m5[3]_GND_4_o_MuLt_4_OUT_1" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_12" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_11" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_10" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_9" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_8" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_7" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_6" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_5" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_4" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_3" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_2" BEL
+        "Mmult_m8[3]_GND_4_o_MuLt_7_OUT_1" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_12" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_11" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_10" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_9" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_8" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_7" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_6" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_5" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_4" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_3" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_2" BEL
+        "Mmult_m9[3]_GND_4_o_MuLt_8_OUT_1" BEL "extraFF9c/temp_11" BEL
+        "extraFF9c/temp_10" BEL "extraFF9c/temp_9" BEL "extraFF9c/temp_8" BEL
+        "extraFF9c/temp_7" BEL "extraFF9c/temp_6" BEL "extraFF9c/temp_5" BEL
+        "extraFF9c/temp_4" BEL "extraFF9c/temp_3" BEL "extraFF9c/temp_2" BEL
+        "extraFF9c/temp_1" BEL "extraFF9c/temp_0" BEL "extraFF9b/temp_12" BEL
+        "extraFF9b/temp_10" BEL "extraFF9b/temp_9" BEL "extraFF9b/temp_8" BEL
+        "extraFF9b/temp_7" BEL "extraFF9b/temp_6" BEL "extraFF9b/temp_5" BEL
+        "extraFF9b/temp_4" BEL "extraFF9b/temp_3" BEL "extraFF9b/temp_2" BEL
+        "extraFF9b/temp_1" BEL "extraFF9b/temp_0" BEL "extraFF9a/temp_12" BEL
+        "extraFF9a/temp_10" BEL "extraFF9a/temp_9" BEL "extraFF9a/temp_8" BEL
+        "extraFF9a/temp_7" BEL "extraFF9a/temp_6" BEL "extraFF9a/temp_5" BEL
+        "extraFF9a/temp_4" BEL "extraFF9a/temp_3" BEL "extraFF9a/temp_2" BEL
+        "extraFF9a/temp_1" BEL "extraFF9a/temp_0" BEL "extra9/temp_12" BEL
+        "extra9/temp_10" BEL "extra9/temp_9" BEL "extra9/temp_8" BEL
+        "extra9/temp_7" BEL "extra9/temp_6" BEL "extra9/temp_5" BEL
+        "extra9/temp_4" BEL "extra9/temp_3" BEL "extra9/temp_2" BEL
+        "extra9/temp_1" BEL "extra9/temp_0" BEL "extra8/temp_11" BEL
+        "extra8/temp_10" BEL "extra8/temp_9" BEL "extra8/temp_8" BEL
+        "extra8/temp_7" BEL "extra8/temp_6" BEL "extra8/temp_5" BEL
+        "extra8/temp_4" BEL "extra8/temp_3" BEL "extra8/temp_2" BEL
+        "extra8/temp_1" BEL "extra8/temp_0" BEL "extra7/temp_11" BEL
+        "extra7/temp_10" BEL "extra7/temp_9" BEL "extra7/temp_8" BEL
+        "extra7/temp_7" BEL "extra7/temp_6" BEL "extra7/temp_5" BEL
+        "extra7/temp_4" BEL "extra7/temp_3" BEL "extra7/temp_2" BEL
+        "extra7/temp_1" BEL "extra7/temp_0" BEL "extra6/temp_11" BEL
+        "extra6/temp_10" BEL "extra6/temp_9" BEL "extra6/temp_8" BEL
+        "extra6/temp_7" BEL "extra6/temp_6" BEL "extra6/temp_5" BEL
+        "extra6/temp_4" BEL "extra6/temp_3" BEL "extra6/temp_2" BEL
+        "extra6/temp_1" BEL "extra6/temp_0" BEL "extra5/temp_11" BEL
+        "extra5/temp_10" BEL "extra5/temp_9" BEL "extra5/temp_8" BEL
+        "extra5/temp_7" BEL "extra5/temp_6" BEL "extra5/temp_5" BEL
+        "extra5/temp_4" BEL "extra5/temp_3" BEL "extra5/temp_2" BEL
+        "extra5/temp_1" BEL "extra5/temp_0" BEL "extra4/temp_11" BEL
+        "extra4/temp_10" BEL "extra4/temp_9" BEL "extra4/temp_8" BEL
+        "extra4/temp_7" BEL "extra4/temp_6" BEL "extra4/temp_5" BEL
+        "extra4/temp_4" BEL "extra4/temp_3" BEL "extra4/temp_2" BEL
+        "extra4/temp_1" BEL "extra4/temp_0" BEL "extra3/temp_11" BEL
+        "extra3/temp_10" BEL "extra3/temp_9" BEL "extra3/temp_8" BEL
+        "extra3/temp_7" BEL "extra3/temp_6" BEL "extra3/temp_5" BEL
+        "extra3/temp_4" BEL "extra3/temp_3" BEL "extra3/temp_2" BEL
+        "extra3/temp_1" BEL "extra3/temp_0" BEL "extra2/temp_11" BEL
+        "extra2/temp_10" BEL "extra2/temp_9" BEL "extra2/temp_8" BEL
+        "extra2/temp_7" BEL "extra2/temp_6" BEL "extra2/temp_5" BEL
+        "extra2/temp_4" BEL "extra2/temp_3" BEL "extra2/temp_2" BEL
+        "extra2/temp_1" BEL "extra2/temp_0" BEL "extra1/temp_11" BEL
+        "extra1/temp_10" BEL "extra1/temp_9" BEL "extra1/temp_8" BEL
+        "extra1/temp_7" BEL "extra1/temp_6" BEL "extra1/temp_5" BEL
+        "extra1/temp_4" BEL "extra1/temp_3" BEL "extra1/temp_2" BEL
+        "extra1/temp_1" BEL "extra1/temp_0" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 2.6 ns HIGH 50%;
+SCHEMATIC END;
+

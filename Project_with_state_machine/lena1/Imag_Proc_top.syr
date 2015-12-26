@@ -1,0 +1,963 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: Imag_Proc_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Imag_Proc_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Imag_Proc_top"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : Imag_Proc_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/student/workspace_Xilinx/lena1/FlipFlop.vhd" into library work
+Parsing entity <FlipFlop>.
+Parsing architecture <Behavioral> of entity <flipflop>.
+Parsing VHDL file "/home/student/workspace_Xilinx/lena1/kernel.vhd" into library work
+Parsing entity <kernel>.
+Parsing architecture <Behavioral> of entity <kernel>.
+Parsing VHDL file "/home/student/workspace_Xilinx/lena1/fifo.vhd" into library work
+Parsing entity <fifo>.
+Parsing architecture <fifo_a> of entity <fifo>.
+Parsing VHDL file "/home/student/workspace_Xilinx/lena1/ImageFilter.vhd" into library work
+Parsing entity <ImageFilter>.
+Parsing architecture <Behavioral> of entity <imagefilter>.
+Parsing VHDL file "/home/student/workspace_Xilinx/lena1/DataFlow_Display.vhd" into library work
+Parsing entity <DataFlow_Display>.
+Parsing architecture <DataFlow_Display_arch> of entity <dataflow_display>.
+Parsing VHDL file "/home/student/workspace_Xilinx/lena1/Imag_proc_top.vhd" into library work
+Parsing entity <Imag_Proc_top>.
+Parsing architecture <Imag_Proc_top_arch> of entity <imag_proc_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Imag_Proc_top> (architecture <Imag_Proc_top_arch>) from library <work>.
+
+Elaborating entity <ImageFilter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FlipFlop> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <fifo> (architecture <fifo_a>) from library <work>.
+INFO:HDLCompiler:679 - "/home/student/workspace_Xilinx/lena1/ImageFilter.vhd" Line 202. Case statement is complete. others clause is never selected
+
+Elaborating entity <kernel> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FlipFlop> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/home/student/workspace_Xilinx/lena1/kernel.vhd" Line 119. Case statement is complete. others clause is never selected
+
+Elaborating entity <DataFlow_Display> (architecture <DataFlow_Display_arch>) from library <work>.
+WARNING:HDLCompiler:89 - "/home/student/workspace_Xilinx/lena1/DataFlow_Display.vhd" Line 59: <fifo_imag_9b_16700> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/student/workspace_Xilinx/lena1/DataFlow_Display.vhd" Line 75: <vga_df> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "/home/student/workspace_Xilinx/lena1/Imag_proc_top.vhd" Line 67: <imgrom_pixgl8b> remains a black-box since it has no binding entity.
+INFO:HDLCompiler:679 - "/home/student/workspace_Xilinx/lena1/Imag_proc_top.vhd" Line 306. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "/home/student/workspace_Xilinx/lena1/Imag_proc_top.vhd" Line 124: Net <Switch_start> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Imag_Proc_top>.
+    Related source file is "/home/student/workspace_Xilinx/lena1/Imag_proc_top.vhd".
+WARNING:Xst:647 - Input <ISRealFreq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ISPureFreq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ISFIFO> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ISFast> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ISSlow> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ISVolUp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ISVolDown> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ISSiren> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ISMusic> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <Switch_start> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Register <data_fifo_proc_ready> equivalent to <data_fifo_orig_ready> has been removed
+    Found 14-bit register for signal <addra>.
+    Found 4-bit register for signal <m1>.
+    Found 4-bit register for signal <m2>.
+    Found 4-bit register for signal <m3>.
+    Found 4-bit register for signal <m4>.
+    Found 4-bit register for signal <m6>.
+    Found 4-bit register for signal <m7>.
+    Found 4-bit register for signal <m8>.
+    Found 4-bit register for signal <m9>.
+    Found 2-bit register for signal <STATEG>.
+    Found 4-bit register for signal <m5>.
+    Found 1-bit register for signal <ena>.
+    Found 1-bit register for signal <LED<5>>.
+    Found 1-bit register for signal <LED<4>>.
+    Found 1-bit register for signal <wr_en_fifo_orig>.
+    Found 1-bit register for signal <filter_wr_en>.
+    Found 1-bit register for signal <data_fifo_orig_ready>.
+    Found 1-bit register for signal <divider_selector>.
+    Found finite state machine <FSM_0> for signal <STATEG>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk_int (rising_edge)                          |
+    | Reset              | rst_i (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s1                                             |
+    | Power Up State     | s1                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <addra[13]_GND_7_o_add_2_OUT> created at line 297.
+    Found 8x4-bit Read Only RAM for signal <PWR_7_o_GND_7_o_mux_35_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  57 D-type flip-flop(s).
+	inferred  19 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Imag_Proc_top> synthesized.
+
+Synthesizing Unit <ImageFilter>.
+    Related source file is "/home/student/workspace_Xilinx/lena1/ImageFilter.vhd".
+INFO:Xst:3210 - "/home/student/workspace_Xilinx/lena1/ImageFilter.vhd" line 146: Output port <full> of the instance <fif1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/student/workspace_Xilinx/lena1/ImageFilter.vhd" line 146: Output port <empty> of the instance <fif1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/student/workspace_Xilinx/lena1/ImageFilter.vhd" line 161: Output port <full> of the instance <fif2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/student/workspace_Xilinx/lena1/ImageFilter.vhd" line 161: Output port <empty> of the instance <fif2> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <EN1>.
+    Found 1-bit register for signal <EN2>.
+    Found 1-bit register for signal <EN3>.
+    Found 1-bit register for signal <ENF1>.
+    Found 1-bit register for signal <EN4>.
+    Found 1-bit register for signal <EN5>.
+    Found 1-bit register for signal <EN6>.
+    Found 1-bit register for signal <ENF2>.
+    Found 1-bit register for signal <EN7>.
+    Found 1-bit register for signal <EN8>.
+    Found 1-bit register for signal <EN9>.
+    Found 2-bit register for signal <STATEG>.
+    Found 1-bit register for signal <KWR_EN>.
+    Found finite state machine <FSM_1> for signal <STATEG>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 3-to-1 multiplexer for signal <STATEG[1]_X_8_o_Mux_15_o> created at line 184.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ImageFilter> synthesized.
+
+Synthesizing Unit <FlipFlop_1>.
+    Related source file is "/home/student/workspace_Xilinx/lena1/FlipFlop.vhd".
+        Bus_Width = 8
+    Found 8-bit register for signal <temp>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <FlipFlop_1> synthesized.
+
+Synthesizing Unit <kernel>.
+    Related source file is "/home/student/workspace_Xilinx/lena1/kernel.vhd".
+    Found 1-bit register for signal <EN1>.
+    Found 1-bit register for signal <EN2>.
+    Found 1-bit register for signal <EN3>.
+    Found 1-bit register for signal <RD_EN>.
+    Found 4-bit register for signal <STATEG>.
+    Found 13-bit register for signal <c1>.
+    Found 13-bit register for signal <c2>.
+    Found 13-bit register for signal <c3>.
+    Found 13-bit register for signal <c4>.
+    Found 13-bit register for signal <c5>.
+    Found 13-bit register for signal <c6>.
+    Found 13-bit register for signal <c7>.
+    Found 13-bit register for signal <c8>.
+    Found 13-bit register for signal <c9>.
+    Found 14-bit register for signal <add12>.
+    Found 14-bit register for signal <add34>.
+    Found 14-bit register for signal <add56>.
+    Found 14-bit register for signal <add78>.
+    Found 15-bit register for signal <add1234>.
+    Found 15-bit register for signal <add5678>.
+    Found 16-bit register for signal <add12345678>.
+    Found 17-bit register for signal <add123456789>.
+    Found 8-bit register for signal <absResTemp>.
+    Found finite state machine <FSM_2> for signal <STATEG>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 12                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s1                                             |
+    | Power Up State     | s1                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <c1[12]_c2[12]_add_17_OUT> created at line 138.
+    Found 14-bit adder for signal <c3[12]_c4[12]_add_18_OUT> created at line 139.
+    Found 14-bit adder for signal <c5[12]_c6[12]_add_19_OUT> created at line 140.
+    Found 14-bit adder for signal <c7[12]_c8[12]_add_20_OUT> created at line 141.
+    Found 15-bit adder for signal <add12[13]_add34[13]_add_21_OUT> created at line 143.
+    Found 15-bit adder for signal <add56[13]_add78[13]_add_22_OUT> created at line 144.
+    Found 16-bit adder for signal <add1234[14]_add5678[14]_add_23_OUT> created at line 146.
+    Found 17-bit adder for signal <add12345678[15]_FF92[12]_add_24_OUT> created at line 148.
+    Found 17-bit adder for signal <GND_19_o_GND_19_o_add_25_OUT> created at line 148.
+    Found 4x9-bit multiplier for signal <m1[3]_GND_19_o_MuLt_8_OUT> created at line 128.
+    Found 4x9-bit multiplier for signal <m2[3]_GND_19_o_MuLt_9_OUT> created at line 129.
+    Found 4x9-bit multiplier for signal <m3[3]_GND_19_o_MuLt_10_OUT> created at line 130.
+    Found 4x9-bit multiplier for signal <m4[3]_GND_19_o_MuLt_11_OUT> created at line 131.
+    Found 4x9-bit multiplier for signal <m5[3]_GND_19_o_MuLt_12_OUT> created at line 132.
+    Found 4x9-bit multiplier for signal <m6[3]_GND_19_o_MuLt_13_OUT> created at line 133.
+    Found 4x9-bit multiplier for signal <m7[3]_GND_19_o_MuLt_14_OUT> created at line 134.
+    Found 4x9-bit multiplier for signal <m8[3]_GND_19_o_MuLt_15_OUT> created at line 135.
+    Found 4x9-bit multiplier for signal <m9[3]_GND_19_o_MuLt_16_OUT> created at line 136.
+    Summary:
+	inferred   9 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred 248 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <kernel> synthesized.
+
+Synthesizing Unit <FlipFlop_2>.
+    Related source file is "/home/student/workspace_Xilinx/lena1/FlipFlop.vhd".
+        Bus_Width = 13
+    Found 13-bit register for signal <temp>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <FlipFlop_2> synthesized.
+
+Synthesizing Unit <DataFlow_Display>.
+    Related source file is "/home/student/workspace_Xilinx/lena1/DataFlow_Display.vhd".
+WARNING:Xst:647 - Input <Switch_start> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <DataFlow_Display> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 9
+ 9x4-bit multiplier                                    : 9
+# Adders/Subtractors                                   : 10
+ 14-bit adder                                          : 5
+ 15-bit adder                                          : 2
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 2
+# Registers                                            : 63
+ 1-bit register                                        : 23
+ 13-bit register                                       : 12
+ 14-bit register                                       : 5
+ 15-bit register                                       : 2
+ 16-bit register                                       : 1
+ 17-bit register                                       : 1
+ 4-bit register                                        : 9
+ 8-bit register                                        : 10
+# Multiplexers                                         : 37
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 3-to-1 multiplexer                              : 1
+ 13-bit 2-to-1 multiplexer                             : 3
+ 14-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 15
+ 8-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 3
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <imgRom_pixGL8b.ngc>.
+Reading core <fifo.ngc>.
+Reading core <fifo_imag_9b_16700.ngc>.
+Reading core <Vga_df.ngc>.
+Reading core <imgROM_pixRGB_12b.ngc>.
+Loading core <imgRom_pixGL8b> for timing and area information for instance <img_lena_8bits>.
+Loading core <fifo> for timing and area information for instance <fif1>.
+Loading core <fifo> for timing and area information for instance <fif2>.
+Loading core <fifo_imag_9b_16700> for timing and area information for instance <fifo_orig>.
+Loading core <fifo_imag_9b_16700> for timing and area information for instance <fifo_proc>.
+Loading core <imgROM_pixRGB_12b> for timing and area information for instance <Inst_mp/logo_annee>.
+Loading core <Vga_df> for timing and area information for instance <Inst_VGA>.
+INFO:Xst:2261 - The FF/Latch <EN2> in Unit <filter> is equivalent to the following 10 FFs/Latches, which will be removed : <EN1> <EN3> <ENF1> <EN4> <EN5> <EN6> <ENF2> <EN7> <EN8> <EN9> 
+WARNING:Xst:2677 - Node <add123456789_0> of sequential type is unconnected in block <kernel0>.
+WARNING:Xst:2677 - Node <add123456789_1> of sequential type is unconnected in block <kernel0>.
+WARNING:Xst:2677 - Node <add123456789_11> of sequential type is unconnected in block <kernel0>.
+WARNING:Xst:2677 - Node <add123456789_12> of sequential type is unconnected in block <kernel0>.
+WARNING:Xst:2677 - Node <add123456789_13> of sequential type is unconnected in block <kernel0>.
+WARNING:Xst:2677 - Node <add123456789_14> of sequential type is unconnected in block <kernel0>.
+WARNING:Xst:2677 - Node <add123456789_15> of sequential type is unconnected in block <kernel0>.
+WARNING:Xst:2677 - Node <add123456789_16> of sequential type is unconnected in block <kernel0>.
+
+Synthesizing (advanced) Unit <Imag_Proc_top>.
+The following registers are absorbed into counter <addra>: 1 register on signal <addra>.
+INFO:Xst:3217 - HDL ADVISOR - Register <m5> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_PWR_7_o_GND_7_o_mux_35_OUT> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <FILTER_SEL>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Imag_Proc_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <kernel>.
+	Multiplier <Mmult_m1[3]_GND_19_o_MuLt_8_OUT> in block <kernel> and adder/subtractor <Madd_c1[12]_c2[12]_add_17_OUT> in block <kernel> are combined into a MAC<Maddsub_m1[3]_GND_19_o_MuLt_8_OUT>.
+	The following registers are also absorbed by the MAC: <c1> in block <kernel>, <add12> in block <kernel>.
+	Multiplier <Mmult_m3[3]_GND_19_o_MuLt_10_OUT> in block <kernel> and adder/subtractor <Madd_c3[12]_c4[12]_add_18_OUT> in block <kernel> are combined into a MAC<Maddsub_m3[3]_GND_19_o_MuLt_10_OUT>.
+	The following registers are also absorbed by the MAC: <c3> in block <kernel>, <add34> in block <kernel>.
+	Multiplier <Mmult_m5[3]_GND_19_o_MuLt_12_OUT> in block <kernel> and adder/subtractor <Madd_c5[12]_c6[12]_add_19_OUT> in block <kernel> are combined into a MAC<Maddsub_m5[3]_GND_19_o_MuLt_12_OUT>.
+	The following registers are also absorbed by the MAC: <c5> in block <kernel>, <add56> in block <kernel>.
+	Multiplier <Mmult_m7[3]_GND_19_o_MuLt_14_OUT> in block <kernel> and adder/subtractor <Madd_c7[12]_c8[12]_add_20_OUT> in block <kernel> are combined into a MAC<Maddsub_m7[3]_GND_19_o_MuLt_14_OUT>.
+	The following registers are also absorbed by the MAC: <c7> in block <kernel>, <add78> in block <kernel>.
+	Found pipelined multiplier on signal <m2[3]_GND_19_o_MuLt_9_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <m4[3]_GND_19_o_MuLt_11_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <m6[3]_GND_19_o_MuLt_13_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <m8[3]_GND_19_o_MuLt_15_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+	Found pipelined multiplier on signal <m9[3]_GND_19_o_MuLt_16_OUT>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+Unit <kernel> synthesized (advanced).
+WARNING:Xst:2677 - Node <add123456789_0> of sequential type is unconnected in block <kernel>.
+WARNING:Xst:2677 - Node <add123456789_1> of sequential type is unconnected in block <kernel>.
+WARNING:Xst:2677 - Node <add123456789_11> of sequential type is unconnected in block <kernel>.
+WARNING:Xst:2677 - Node <add123456789_12> of sequential type is unconnected in block <kernel>.
+WARNING:Xst:2677 - Node <add123456789_13> of sequential type is unconnected in block <kernel>.
+WARNING:Xst:2677 - Node <add123456789_14> of sequential type is unconnected in block <kernel>.
+WARNING:Xst:2677 - Node <add123456789_15> of sequential type is unconnected in block <kernel>.
+WARNING:Xst:2677 - Node <add123456789_16> of sequential type is unconnected in block <kernel>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x4-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 4
+ 9x4-to-14-bit MAC                                     : 4
+# Multipliers                                          : 5
+ 9x4-bit registered multiplier                         : 5
+# Adders/Subtractors                                   : 5
+ 15-bit adder                                          : 2
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 2
+# Counters                                             : 1
+ 14-bit up counter                                     : 1
+# Registers                                            : 233
+ Flip-Flops                                            : 233
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 5
+ 1-bit 3-to-1 multiplexer                              : 1
+ 13-bit 2-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 15
+ 8-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 3
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <EN2> in Unit <ImageFilter> is equivalent to the following 10 FFs/Latches, which will be removed : <EN1> <EN3> <ENF1> <EN4> <EN5> <EN7> <EN6> <ENF2> <EN8> <EN9> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <STATEG[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s1    | 00
+ s2    | 01
+ s3    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <filter/FSM_1> on signal <STATEG[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00
+ s1    | 01
+ s2    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <filter/kernel0/FSM_2> on signal <STATEG[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s1    | 0000
+ s2    | 0001
+ s3    | 0010
+ s4    | 0011
+ s5    | 0100
+ s6    | 0101
+ s7    | 0110
+ s8    | 0111
+ s9    | 1000
+ s10   | 1001
+-------------------
+WARNING:Xst:1710 - FF/Latch <m5_0> (without init value) has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m5_1> (without init value) has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m9_1> (without init value) has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m9_2> (without init value) has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m9_3> (without init value) has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <wr_en_fifo_orig> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <filter_wr_en> 
+INFO:Xst:2261 - The FF/Latch <m7_0> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m9_0> 
+INFO:Xst:2261 - The FF/Latch <m7_1> in Unit <Imag_Proc_top> is equivalent to the following 2 FFs/Latches, which will be removed : <m7_2> <m7_3> 
+INFO:Xst:2261 - The FF/Latch <m3_1> in Unit <Imag_Proc_top> is equivalent to the following 2 FFs/Latches, which will be removed : <m3_2> <m3_3> 
+INFO:Xst:2261 - The FF/Latch <m2_1> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m8_1> 
+INFO:Xst:2261 - The FF/Latch <m6_0> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m4_0> 
+INFO:Xst:2261 - The FF/Latch <m6_1> in Unit <Imag_Proc_top> is equivalent to the following 3 FFs/Latches, which will be removed : <m4_1> <m4_2> <m4_3> 
+INFO:Xst:2261 - The FF/Latch <m1_0> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m3_0> 
+INFO:Xst:2261 - The FF/Latch <m1_1> in Unit <Imag_Proc_top> is equivalent to the following 2 FFs/Latches, which will be removed : <m1_2> <m1_3> 
+INFO:Xst:2261 - The FF/Latch <m6_2> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m6_3> 
+INFO:Xst:2261 - The FF/Latch <m2_0> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m8_0> 
+
+Optimizing unit <Imag_Proc_top> ...
+INFO:Xst:2261 - The FF/Latch <m5_2> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <divider_selector> 
+INFO:Xst:2261 - The FF/Latch <m2_1> in Unit <Imag_Proc_top> is equivalent to the following 2 FFs/Latches, which will be removed : <m2_2> <m2_3> 
+INFO:Xst:2261 - The FF/Latch <m8_2> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m8_3> 
+INFO:Xst:2261 - The FF/Latch <m1_0> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m7_0> 
+INFO:Xst:2261 - The FF/Latch <m6_2> in Unit <Imag_Proc_top> is equivalent to the following 3 FFs/Latches, which will be removed : <m5_2> <m8_2> <m8_3> 
+INFO:Xst:2261 - The FF/Latch <m2_1> in Unit <Imag_Proc_top> is equivalent to the following 2 FFs/Latches, which will be removed : <m2_2> <m2_3> 
+INFO:Xst:2261 - The FF/Latch <m1_0> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m7_0> 
+INFO:Xst:2261 - The FF/Latch <m6_0> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <m2_0> 
+
+Optimizing unit <ImageFilter> ...
+
+Optimizing unit <FlipFlop_1> ...
+
+Optimizing unit <kernel> ...
+
+Optimizing unit <FlipFlop_2> ...
+WARNING:Xst:1710 - FF/Latch <filter/kernel0/Mmult_m9[3]_GND_19_o_MuLt_16_OUT_0> (without init value) has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <filter/kernel0/Mmult_m9[3]_GND_19_o_MuLt_16_OUT_4> (without init value) has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra91/temp_8> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra91/temp_9> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra91/temp_10> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra91/temp_11> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra91/temp_12> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra92/temp_8> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra92/temp_9> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra92/temp_10> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra92/temp_11> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra92/temp_12> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra93/temp_8> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra93/temp_9> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra93/temp_10> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra93/temp_11> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <filter/kernel0/extra93/temp_12> has a constant value of 0 in block <Imag_Proc_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <filter/kernel0/Mmult_m9[3]_GND_19_o_MuLt_16_OUT_1> is unconnected in block <Imag_Proc_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <filter/kernel0/Mmult_m9[3]_GND_19_o_MuLt_16_OUT_2> is unconnected in block <Imag_Proc_top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <filter/kernel0/Mmult_m9[3]_GND_19_o_MuLt_16_OUT_3> is unconnected in block <Imag_Proc_top>.
+INFO:Xst:2261 - The FF/Latch <STATEG_FSM_FFd2> in Unit <Imag_Proc_top> is equivalent to the following FF/Latch, which will be removed : <ena> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Imag_Proc_top, actual ratio is 1.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <filter/fif2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <filter/fif2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <filter/fif2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <filter/fif1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <filter/fif1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <filter/fif1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Inst_DataFlow_Display/fifo_orig> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Inst_DataFlow_Display/fifo_orig> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Inst_DataFlow_Display/fifo_orig> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Inst_DataFlow_Display/fifo_orig> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Inst_DataFlow_Display/fifo_proc> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Inst_DataFlow_Display/fifo_proc> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Inst_DataFlow_Display/fifo_proc> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Inst_DataFlow_Display/fifo_proc> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <filter/fif2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <filter/fif2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <filter/fif2> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <filter/fif1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <filter/fif1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> in Unit <filter/fif1> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Inst_DataFlow_Display/fifo_orig> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Inst_DataFlow_Display/fifo_orig> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Inst_DataFlow_Display/fifo_orig> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Inst_DataFlow_Display/fifo_orig> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <Inst_DataFlow_Display/fifo_proc> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <Inst_DataFlow_Display/fifo_proc> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <Inst_DataFlow_Display/fifo_proc> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <Inst_DataFlow_Display/fifo_proc> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 208
+ Flip-Flops                                            : 208
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Imag_Proc_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1781
+#      GND                         : 12
+#      INV                         : 23
+#      LUT1                        : 135
+#      LUT2                        : 333
+#      LUT3                        : 62
+#      LUT4                        : 252
+#      LUT5                        : 72
+#      LUT6                        : 196
+#      MUXCY                       : 405
+#      MUXF7                       : 19
+#      VCC                         : 10
+#      XORCY                       : 262
+# FlipFlops/Latches                : 978
+#      FD                          : 136
+#      FDC                         : 419
+#      FDCE                        : 270
+#      FDE                         : 21
+#      FDP                         : 59
+#      FDPE                        : 8
+#      FDR                         : 18
+#      FDRE                        : 47
+# RAMS                             : 67
+#      RAMB18E1                    : 4
+#      RAMB36E1                    : 63
+# Shift Registers                  : 12
+#      SRLC16E                     : 12
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 36
+#      IBUF                        : 5
+#      IBUFG                       : 1
+#      OBUF                        : 30
+# DSPs                             : 8
+#      DSP48E1                     : 8
+# Others                           : 1
+#      MMCME2_ADV                  : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             978  out of  126800     0%  
+ Number of Slice LUTs:                 1085  out of  63400     1%  
+    Number used as Logic:              1073  out of  63400     1%  
+    Number used as Memory:               12  out of  19000     0%  
+       Number used as SRL:               12
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1501
+   Number with an unused Flip Flop:     523  out of   1501    34%  
+   Number with an unused LUT:           416  out of   1501    27%  
+   Number of fully used LUT-FF pairs:   562  out of   1501    37%  
+   Number of unique control sets:        58
+
+IO Utilization: 
+ Number of IOs:                          45
+ Number of bonded IOBs:                  36  out of    210    17%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               65  out of    135    48%  
+    Number using Block RAM only:         65
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+ Number of DSP48E1s:                      8  out of    240     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------+--------------------------------------------------------------------------------------+-------+
+Clock Signal                                         | Clock buffer(FF name)                                                                | Load  |
+-----------------------------------------------------+--------------------------------------------------------------------------------------+-------+
+clk_i                                                | IBUFG+BUFG                                                                           | 680   |
+Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0| BUFG                                                                                 | 401   |
+Inst_DataFlow_Display/Inst_VGA/N1                    | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary191)| 40    |
+-----------------------------------------------------+--------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                                                                        | Buffer(FF name)                                                                                                                                                                                                             | Load  |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Inst_DataFlow_Display/Inst_VGA/N0(Inst_DataFlow_Display/Inst_VGA/XST_VCC:P)                                                                                                                                                                                                                                                                           | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary101)                                                                                                                                       | 4960  |
+Inst_DataFlow_Display/Inst_VGA/N1(Inst_DataFlow_Display/Inst_VGA/XST_GND:G)                                                                                                                                                                                                                                                                           | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary101)                                                                                                                                       | 2880  |
+Inst_DataFlow_Display/fifo_orig/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DBITERR(Inst_DataFlow_Display/fifo_orig/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND:G)| NONE(Inst_DataFlow_Display/fifo_orig/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM36.ram)| 32    |
+Inst_DataFlow_Display/fifo_proc/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/DBITERR(Inst_DataFlow_Display/fifo_proc/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/XST_GND:G)| NONE(Inst_DataFlow_Display/fifo_proc/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM36.ram)| 32    |
+img_lena_8bits/N1(img_lena_8bits/XST_GND:G)                                                                                                                                                                                                                                                                                                           | NONE(img_lena_8bits/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)                                                                        | 8     |
+Inst_DataFlow_Display/Inst_VGA/Inst_mp/logo_annee/N1(Inst_DataFlow_Display/Inst_VGA/Inst_mp/logo_annee/XST_GND:G)                                                                                                                                                                                                                                     | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_mp/logo_annee/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)                                     | 6     |
+Inst_DataFlow_Display/Inst_VGA/N100(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary161:CASCADEOUTA)                                                                                                                                                                                                                      | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary16)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N102(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary201:CASCADEOUTA)                                                                                                                                                                                                                      | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary20)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N104(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary181:CASCADEOUTA)                                                                                                                                                                                                                      | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary18)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N106(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary191:CASCADEOUTA)                                                                                                                                                                                                                      | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary19)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N68(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary21:CASCADEOUTA)                                                                                                                                                                                                                        | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary2)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N70(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary110:CASCADEOUTA)                                                                                                                                                                                                                       | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary1)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N72(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary51:CASCADEOUTA)                                                                                                                                                                                                                        | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary5)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N74(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary31:CASCADEOUTA)                                                                                                                                                                                                                        | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary3)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N76(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary41:CASCADEOUTA)                                                                                                                                                                                                                        | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary4)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N78(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary81:CASCADEOUTA)                                                                                                                                                                                                                        | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary8)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N80(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary61:CASCADEOUTA)                                                                                                                                                                                                                        | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary6)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N82(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary71:CASCADEOUTA)                                                                                                                                                                                                                        | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary7)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N84(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary111:CASCADEOUTA)                                                                                                                                                                                                                       | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary11)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N86(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary91:CASCADEOUTA)                                                                                                                                                                                                                        | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary9)                                                                                                                                         | 2     |
+Inst_DataFlow_Display/Inst_VGA/N88(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary101:CASCADEOUTA)                                                                                                                                                                                                                       | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary10)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N90(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary141:CASCADEOUTA)                                                                                                                                                                                                                       | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary14)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N92(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary121:CASCADEOUTA)                                                                                                                                                                                                                       | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary12)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N94(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary131:CASCADEOUTA)                                                                                                                                                                                                                       | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary13)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N96(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary171:CASCADEOUTA)                                                                                                                                                                                                                       | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary17)                                                                                                                                        | 2     |
+Inst_DataFlow_Display/Inst_VGA/N98(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary151:CASCADEOUTA)                                                                                                                                                                                                                       | NONE(Inst_DataFlow_Display/Inst_VGA/Inst_BackgroundVGA/Mram_BackgroundImageBinary15)                                                                                                                                        | 2     |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.946ns (Maximum Frequency: 202.184MHz)
+   Minimum input arrival time before clock: 1.075ns
+   Maximum output required time after clock: 0.883ns
+   Maximum combinational path delay: 0.581ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_i'
+  Clock period: 4.757ns (frequency: 210.236MHz)
+  Total number of paths / destination ports: 9982 / 1809
+-------------------------------------------------------------------------
+Delay:               4.757ns (Levels of Logic = 0)
+  Source:            m6_2 (FF)
+  Destination:       filter/kernel0/Mmult_m8[3]_GND_19_o_MuLt_15_OUT (DSP)
+  Source Clock:      clk_i rising
+  Destination Clock: clk_i rising
+
+  Data Path: m6_2 to filter/kernel0/Mmult_m8[3]_GND_19_o_MuLt_15_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             55   0.478   0.557  m6_2 (m6_2)
+     DSP48E1:A2                3.722          filter/kernel0/Mmult_m8[3]_GND_19_o_MuLt_15_OUT
+    ----------------------------------------
+    Total                      4.757ns (4.200ns logic, 0.557ns route)
+                                       (88.3% logic, 11.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0'
+  Clock period: 4.946ns (frequency: 202.184MHz)
+  Total number of paths / destination ports: 13156 / 696
+-------------------------------------------------------------------------
+Delay:               4.946ns (Levels of Logic = 6)
+  Source:            Inst_DataFlow_Display/Inst_VGA/v_cntr_reg_dly_0 (FF)
+  Destination:       Inst_DataFlow_Display/Inst_VGA/vga_green_reg_2 (FF)
+  Source Clock:      Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0 rising
+  Destination Clock: Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0 rising
+
+  Data Path: Inst_DataFlow_Display/Inst_VGA/v_cntr_reg_dly_0 to Inst_DataFlow_Display/Inst_VGA/vga_green_reg_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.478   0.946  v_cntr_reg_dly_0 (v_cntr_reg_dly<0>)
+     LUT5:I0->O            1   0.124   0.536  rd_en_fifo_orig12 (rd_en_fifo_orig12)
+     LUT6:I4->O            2   0.124   0.542  rd_en_fifo_orig13 (rd_en_fifo_orig1)
+     LUT6:I4->O           17   0.124   0.527  GND_6_o_GND_6_o_AND_34_o1 (GND_6_o_GND_6_o_AND_34_o)
+     LUT6:I5->O            2   0.124   0.722  vga_green_cmb<2>1121 (vga_green_cmb<2>112)
+     LUT6:I3->O            1   0.124   0.421  vga_green_cmb<2>11 (vga_green_cmb<2>1)
+     LUT6:I5->O            1   0.124   0.000  vga_green_cmb<2> (vga_green_cmb<2>)
+     FD:D                      0.030          vga_green_reg_2
+    ----------------------------------------
+    Total                      4.946ns (1.252ns logic, 3.694ns route)
+                                       (25.3% logic, 74.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
+  Total number of paths / destination ports: 186 / 169
+-------------------------------------------------------------------------
+Offset:              1.075ns (Levels of Logic = 1)
+  Source:            rst_i (PAD)
+  Destination:       m1_0 (FF)
+  Destination Clock: clk_i rising
+
+  Data Path: rst_i to m1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           162   0.001   0.580  rst_i_IBUF (LED_3_OBUF)
+     FDC:CLR                   0.494          m1_0
+    ----------------------------------------
+    Total                      1.075ns (0.495ns logic, 0.580ns route)
+                                       (46.0% logic, 54.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.075ns (Levels of Logic = 2)
+  Source:            rst_i (PAD)
+  Destination:       Inst_DataFlow_Display/fifo_orig/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg (FF)
+  Destination Clock: Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0 rising
+
+  Data Path: rst_i to Inst_DataFlow_Display/fifo_orig/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           162   0.001   0.580  rst_i_IBUF (LED_3_OBUF)
+     begin scope: 'Inst_DataFlow_Display/fifo_orig:rst'
+     FDP:PRE                   0.494          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg
+    ----------------------------------------
+    Total                      1.075ns (0.495ns logic, 0.580ns route)
+                                       (46.0% logic, 54.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.883ns (Levels of Logic = 1)
+  Source:            LED_5 (FF)
+  Destination:       LED<5> (PAD)
+  Source Clock:      clk_i rising
+
+  Data Path: LED_5 to LED<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.478   0.405  LED_5 (LED_5)
+     OBUF:I->O                 0.000          LED_5_OBUF (LED<5>)
+    ----------------------------------------
+    Total                      0.883ns (0.478ns logic, 0.405ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.883ns (Levels of Logic = 2)
+  Source:            Inst_DataFlow_Display/fifo_orig/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i (FF)
+  Destination:       LED<0> (PAD)
+  Source Clock:      Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0 rising
+
+  Data Path: Inst_DataFlow_Display/fifo_orig/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i to LED<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              2   0.478   0.405  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i (empty)
+     end scope: 'Inst_DataFlow_Display/fifo_orig:empty'
+     OBUF:I->O                 0.000          LED_0_OBUF (LED<0>)
+    ----------------------------------------
+    Total                      0.883ns (0.478ns logic, 0.405ns route)
+                                       (54.1% logic, 45.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.581ns (Levels of Logic = 2)
+  Source:            rst_i (PAD)
+  Destination:       LED<3> (PAD)
+
+  Data Path: rst_i to LED<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           162   0.001   0.580  rst_i_IBUF (LED_3_OBUF)
+     OBUF:I->O                 0.000          LED_3_OBUF (LED<3>)
+    ----------------------------------------
+    Total                      0.581ns (0.001ns logic, 0.580ns route)
+                                       (0.2% logic, 99.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0
+-----------------------------------------------------+---------+---------+---------+---------+
+                                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------------+---------+---------+---------+---------+
+Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0|    4.946|         |         |         |
+Inst_DataFlow_Display/Inst_VGA/N1                    |    8.095|         |         |         |
+clk_i                                                |    2.891|         |         |         |
+-----------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_i
+-----------------------------------------------------+---------+---------+---------+---------+
+                                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------------+---------+---------+---------+---------+
+Inst_DataFlow_Display/Inst_VGA/Inst_PxlClkGen/clkout0|    1.174|         |         |         |
+clk_i                                                |    4.757|         |         |         |
+-----------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.56 secs
+ 
+--> 
+
+
+Total memory usage is 539488 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   56 (   0 filtered)
+Number of infos    :   56 (   0 filtered)
+

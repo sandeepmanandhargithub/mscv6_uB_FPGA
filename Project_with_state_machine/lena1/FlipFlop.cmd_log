@@ -1,0 +1,3 @@
+vhdtdtfi -lib work FlipFlop.vhd -prj lena1 -o FlipFlop.spl -module FlipFlop -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 FlipFlop.spl /home/student/workspace_Xilinx/lena1/FlipFlop.sym 
+vhdtdtfi -prj lena1 -o /home/student/workspace_Xilinx/lena1/FlipFlop.vhi -module FlipFlop -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work FlipFlop.vhd 
